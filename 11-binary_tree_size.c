@@ -1,8 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * calculate_binary_tree_size - Computes the total number of nodes
- * in a binary tree.
+ * binary_tree_size - Computes the total number of nodes in a binary tree.
  * @tree: Pointer to the root node of the tree being measured.
  *
  * Return: Total node count, or 0 if the tree is empty.
