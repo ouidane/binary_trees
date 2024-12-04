@@ -7,10 +7,16 @@
  *
  * Return: Total node count, or 0 if the tree is empty.
  */
-size_t calculate_binary_tree_size(const binary_tree_t *tree)
+size_t binary_tree_size(const binary_tree_t *tree)
 {
-	if (!tree)
-		return 0;
+	size_t size = 0;
 
-	return 1 + calculate_binary_tree_size(tree->left) + calculate_binary_tree_size(tree->right);
+	if (tree)
+	{
+		size += 1;
+		size += binary_tree_size(tree->left);
+		size += binary_tree_size(tree->right);
+	}
+
+	return (size);
 }
