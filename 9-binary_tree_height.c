@@ -1,8 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * Measured the height of a binary tree, i.e. the number of nodes along
- * the longest path from the root node down to the farthest leaf node.
+ * binary_tree_height - Measured the height of a binary tree.
  * @tree: The root node of the tree to measure.
  *
  * Return: 0 if tree is NULL.
