@@ -33,10 +33,9 @@ size_t depth(const binary_tree_t *tree)
 
 /**
  * get_leaf - Finds a leaf node in the tree.
- *
  * @tree: root node of the tree
  *
- * @return: a leaf node
+ * Return: a leaf node
  */
 const binary_tree_t *get_leaf(const binary_tree_t *tree)
 {
@@ -70,7 +69,7 @@ int is_perfect_recursive(const binary_tree_t *tree,
  * is_leaf - Checks if a node is a leaf node in a binary tree.
  * @node: The node to check.
  *
- * @return: 1 if node is a leaf node, 0 otherwise.
+ * Return: 1 if node is a leaf node, 0 otherwise.
  */
 unsigned char is_leaf(const binary_tree_t *node)
 {
