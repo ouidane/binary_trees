@@ -1,3 +1,5 @@
+#include "binary_trees.h"
+
 /**
  * binary_tree_insert_right - Inserts a new node as the right child
  * of a given parent node in a binary tree.
@@ -26,4 +28,3 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 
 	return (new);
 }
-
