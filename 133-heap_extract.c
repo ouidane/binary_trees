@@ -35,6 +35,7 @@ int heap_extract(heap_t **root)
  *
  * @tree: The pointer to the root of the tree.
  */
+void recurse_extract(heap_t *tree)
 {
 	heap_t *sub_max, *right_max = NULL;
 
