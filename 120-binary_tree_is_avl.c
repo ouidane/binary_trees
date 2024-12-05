@@ -8,7 +8,7 @@ size_t height(const binary_tree_t *tree);
  * binary_tree_is_avl - Checks if a binary tree is a valid AVL Tree.
  * @tree: Root node of the tree to check.
  *
- * Returns 1 if tree is a valid AVL Tree, and 0 otherwise.
+ * Return: 1 if tree is a valid AVL Tree, and 0 otherwise.
  */
 int binary_tree_is_avl(const binary_tree_t *tree)
 {
@@ -23,7 +23,7 @@ int binary_tree_is_avl(const binary_tree_t *tree)
  * @lo: The minimum allowed value for the current subtree
  * @hi: The maximum allowed value for the current subtree
  *
- * Returns 1 if @tree is a valid AVL tree, 0 otherwise
+ * Return: 1 if @tree is a valid AVL tree, 0 otherwise
  */
 int is_avl_helper(const binary_tree_t *tree, int lo, int hi)
 {
@@ -48,7 +48,7 @@ int is_avl_helper(const binary_tree_t *tree, int lo, int hi)
  * height - Measures the height of a binary tree.
  * @tree: The tree to measure.
  *
- * Returns 0 if tree is NULL, else returns the height of @tree.
+ * Return: 0 if tree is NULL, else the height of @tree.
  */
 size_t height(const binary_tree_t *tree)
 {
