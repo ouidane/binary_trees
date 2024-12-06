@@ -5,8 +5,9 @@ void recurse_extract(heap_t *tree);
 heap_t *max(heap_t *tree);
 
 /**
- * heap_extract - Extracts the root node of a Max Binary Heap.
- * @root: A double pointer to the root node of heap.
+ * heap_extract - Removes the root node of a Max Binary Heap
+ *                and return the value stored in it.
+ * @root: The root of the heap to remove the root node from.
  *
  * Return: The value stored in the root node.
  */
@@ -29,8 +30,9 @@ int heap_extract(heap_t **root)
 }
 
 /**
- * recurse_extract - Recursively extracts the max from the tree.
- * @tree: The pointer to the root of the tree.
+ * recurse_extract - Replaces the root node of the tree with the maximum
+ *                  of its children, then deletes the maximum node.
+ * @tree: The root of the tree to process.
  */
 void recurse_extract(heap_t *tree)
 {
@@ -58,7 +60,7 @@ void recurse_extract(heap_t *tree)
 
 /**
  * max - Finds the maximum node in a tree.
- * @tree: The pointer to the root of the tree.
+ * @tree: The root of the tree.
  *
  * Return: The node with the maximum value.
  */
